@@ -5,7 +5,7 @@ After getting repeatedly flagged for not submitting daily self-assessment of my 
 
 ### I implemented the following:
 
-  * Created a cronjob which submits the form daily at 8AM.
+  * Created a cronjob which submits the form daily at 8AM by running a shell script.
   
   * Automated the form completion and submission using Selenium.
   
