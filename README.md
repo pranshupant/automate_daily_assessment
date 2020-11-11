@@ -10,3 +10,24 @@ After getting repeatedly flagged for not submitting daily self-assessment of my 
   * Automated the form completion and submission using Selenium.
   
   * On successful submission of form a notification is sent to my Slack using a webhook.
+  
+### Notes:
+
+ * Add your authentication credentials to auth.py.
+ * Modify run.sh to use your local python/conda environment.
+ * Create a webdrivers/ directory with binaries for selenium drivers that you can get using the following command:
+ ```bash
+ curl https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_linux64.zip -o chromedriver_linux64.zip
+ ```
+ 
+  
+### To Run
+
+Add the contents of crontab.txt to your crontab.
+
+```bash
+crontab -e
+
+0 8 * * * cd /---Directory-of-choice-here---/automate_daily_assessment/ && DISPLAY=:0 ./run.sh > /dev/null 2>&1
+
+```
