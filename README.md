@@ -9,4 +9,4 @@ After getting repeatedly flagged for not submitting daily self-assessment of my 
   
   * Automated the form completion and submission using Selenium.
   
-  * On successful completion of form a notification is sent to my Slack using a webhook.
+  * On successful submission of form a notification is sent to my Slack using a webhook.
