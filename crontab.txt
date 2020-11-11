@@ -1,0 +1,1 @@
+0 8 * * * cd /home/pranshu/Desktop/Pranshu/Personal/automate_daily_assessment/ && DISPLAY=:0 ./run.sh >> /tmp/file
