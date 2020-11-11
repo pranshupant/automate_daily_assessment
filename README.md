@@ -1,4 +1,4 @@
-# Automate Daily Self-Assessment CMU
+# Automate Daily Self-Assessment
 Automates the daily COVID-19 self-assessment submission required by CMU
 
 After getting repeatedly flagged for not submitting daily self-assessment of my health (for COVID), I decided to automate the daily form submission process.
