@@ -11,11 +11,14 @@ After getting repeatedly flagged for not submitting daily self-assessment of my 
   
   * On successful submission of form a notification is sent to my Slack using a webhook.
   
+  * Wrote a macro on the MacroDroid Android App to automatically accept the MFA prompts.
+  
 ### Notes:
 
  * Add your authentication credentials to auth.py.
  * Modify run.sh to use your local python/conda environment.
  * Create a webdrivers/ directory with binaries for selenium drivers that you can get using the following command:
+
  ```bash
  curl https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_linux64.zip -o chromedriver_linux64.zip
  ```
