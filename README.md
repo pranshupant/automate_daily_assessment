@@ -9,7 +9,7 @@ After getting repeatedly flagged for not submitting daily self-assessment of my 
   
   * Automated the form completion and submission using Selenium.
   
-  * On successful submission of form a notification is sent to my Slack using a webhook.
+  * Wrote a script for sending a notification to my Slack using webhooks after successful submission of form.
   
   * Wrote a macro on the MacroDroid Android App to automatically accept the MFA prompts.
   
