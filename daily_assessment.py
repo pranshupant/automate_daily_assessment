@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 from selenium import webdriver 
 from time import sleep 
-from webdriver_manager.chrome import ChromeDriverManager 
-from selenium.webdriver.chrome.options import Options 
+# from webdriver_manager.chrome import ChromeDriverManager 
+# from selenium.webdriver.chrome.options import Options 
 
 from selenium.webdriver import ActionChains
 from getpass import getpass
@@ -27,8 +27,8 @@ def pushNotification(message):
 if __name__ == "__main__":
     
     try:
- 
-        driver = webdriver.Chrome(executable_path='/home/pranshu/Desktop/Pranshu/Personal/automate_daily_assessment/webdrivers/chromedriver')
+
+        driver = webdriver.Chrome(executable_path='/home/ppant/Desktop/Pranshu/Personal/automate_daily_assessment/webdrivers/chromedriver')
 
         driver.get('https://daily-student.cmu.edu/') 
         print ("Opened SIO Login") 
@@ -55,16 +55,20 @@ if __name__ == "__main__":
         ac.move_to_element_with_offset(elem, x_offset, y_offset).click().perform() 
         sleep(10)
 
-        q1 = driver.find_element_by_id('Field12_1')
+        q1 = driver.find_element_by_id('Field2_1')
         q1.click()
         sleep(0.5)
 
-        q2 = driver.find_element_by_id('Field3_1')
+        q2 = driver.find_element_by_id('Field12_1')
         q2.click()
         sleep(0.5)
 
-        q3 = driver.find_element_by_id('Field5_2')
+        q3 = driver.find_element_by_id('Field3_1')
         q3.click()
+        sleep(0.5)
+
+        q4 = driver.find_element_by_id('Field5_2')
+        q4.click()
         sleep(0.5)
 
         print ("Fields filled") 
@@ -77,6 +81,7 @@ if __name__ == "__main__":
         pushNotification("Submitted Daily Assessment")
 
     except Exception as e:
+        print(e)
         print("Failed")
         message = "ERROR {} in Daily Assessment",format(e)
         pushNotification(message)
